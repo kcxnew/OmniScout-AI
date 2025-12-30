@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OmniScout AI | Autonomous Web Agent</title>
+    <title>AntiGravity AI | Zero-G Autonomous Agent</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,26 +12,35 @@
     <style>
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #09090b;
+        background-color: #020617;
         color: #f8fafc;
         overflow: hidden;
+        background-image: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #020617 100%);
       }
       .mono {
         font-family: 'JetBrains Mono', monospace;
       }
       .glass {
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
       }
-      .neon-border-rose {
-        border: 1px solid rgba(244, 63, 94, 0.3);
-        box-shadow: 0 0 15px rgba(244, 63, 94, 0.1);
+      .neon-border-cyan {
+        border: 1px solid rgba(34, 211, 238, 0.3);
+        box-shadow: 0 0 20px rgba(34, 211, 238, 0.1);
       }
       .neon-border-violet {
-        border: 1px solid rgba(139, 92, 246, 0.3);
-        box-shadow: 0 0 15px rgba(139, 92, 246, 0.1);
+        border: 1px solid rgba(168, 85, 247, 0.3);
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
+      }
+      .floating {
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
       }
       ::-webkit-scrollbar {
         width: 6px;
@@ -39,11 +49,11 @@
         background: transparent;
       }
       ::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1);
       }
     </style>
   <script type="importmap">
