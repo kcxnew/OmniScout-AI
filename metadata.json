@@ -1,0 +1,7 @@
+{
+  "name": "OmniScout AI",
+  "description": "Next-generation Autonomous Web Agent platform with cognitive DOM parsing and visual verification.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
